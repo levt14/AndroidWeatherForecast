@@ -162,6 +162,5 @@ public class Main2Activity extends AppCompatActivity {
 
         volleyQueue = Volley.newRequestQueue(this);
 
-        fetchWeatherData("https://authentication-debd1.firebaseapp.com/weather.json");
-    }
+        fetchWeatherData("http://api.worldweatheronline.com/premium/v1/weather.ashx?key=(api key here)&q="  + cityName + "&format=json&num_of_days=5");    }
 }
